@@ -1,3 +1,6 @@
 p {
   color: blue;
   display: block; }
+
+* {
+  font-family: 'DM Sans', sans-serif; }
