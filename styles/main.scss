@@ -1,5 +1,3 @@
-@import './base/fonts';
-
-* {
-  font-family: 'DM Sans', sans-serif;
-}
+@import 'base/fonts';
+@import 'base/normalize';
+@import 'base/reset';

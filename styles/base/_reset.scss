@@ -1,0 +1,47 @@
+* {
+  margin: 0;
+  font-family: 'DM Sans', sans-serif;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: 'DM Sans', sans-serif;
+}
+
+body {
+  font-family: 'DM Sans', sans-serif;
+}
+
+h1 {
+  margin: 0;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+button,
+input,
+select,
+textarea {
+  background-color: transparent;
+  border: none;
+
+  &:focus {
+    outline: none;
+    box-shadow: none;
+  }
+}
+
+a,
+button {
+  cursor: pointer;
+}
+
+ul,
+ol,
+li {
+  list-style: none;
+  padding-left: 0;
+}
