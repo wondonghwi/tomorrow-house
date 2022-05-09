@@ -62,7 +62,3 @@ p {
     color: $color;
   }
 }
-
-p {
-  @include text-style(14, $secondary);
-}
