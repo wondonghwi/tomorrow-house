@@ -10,7 +10,7 @@
   @if ($type == fixed or $type == absolute) {
     position: $type;
     top: 50%;
-    transform: translateX(-50%);
+    transform: translateY(-50%);
   }
 }
 
