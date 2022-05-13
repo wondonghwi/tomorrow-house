@@ -767,6 +767,22 @@ i {
 .ic-store:before {
   content: '\e910'; }
 
+.gnb-nav-list {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center; }
+
+.gnb-nav-item {
+  margin-right: 24px; }
+  .gnb-nav-item:last-child {
+    margin-right: 0; }
+  .gnb-nav-item a {
+    font-size: 18px;
+    line-height: 28px;
+    letter-spacing: -0.02em;
+    color: #3f4150;
+    font-weight: 700; }
+
 /*
 * mobile (<768px)
 */
@@ -885,5 +901,33 @@ i {
       display: block;
       width: auto;
       height: 20px; }
+  @media screen and (min-width: 768px) {
+    .gnb-left {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center; }
+    .gnb-right {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center; }
+      .gnb-right .button-group {
+        margin-right: 24px; }
+        .gnb-right .button-group .gnb-icon-button {
+          margin-right: 8px; }
+    .gnb .logo {
+      position: static;
+      transform: none;
+      margin-right: 32px; }
+      .gnb .logo img {
+        height: 24px; }
+    .gnb .btn-primary {
+      width: 88px; }
+      .gnb .btn-primary i {
+        margin-left: 4px; } }
+  @media screen and (min-width: 1200px) {
+    .gnb-right .input-group {
+      width: 264px; }
+    .gnb-right .button-group {
+      margin-left: 24px; } }
 
 /*# sourceMappingURL=style.css.map */

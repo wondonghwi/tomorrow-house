@@ -40,4 +40,50 @@
       height: 20px;
     }
   }
+
+  // 모바일
+  @include responsive(T) {
+    &-left {
+      @include flexbox(start);
+    }
+
+    &-right {
+      @include flexbox(end);
+      .button-group {
+        margin-right: 24px;
+        .gnb-icon-button {
+          margin-right: 8px;
+        }
+      }
+    }
+
+    .logo {
+      position: static;
+      transform: none;
+      margin-right: 32px;
+
+      img {
+        height: 24px;
+      }
+    }
+
+    .btn-primary {
+      width: 88px;
+      i {
+        margin-left: 4px;
+      }
+    }
+  }
+
+  // 데스크탑
+  @include responsive(D) {
+    &-right {
+      .input-group {
+        width: 264px;
+      }
+      .button-group {
+        margin-left: 24px;
+      }
+    }
+  }
 }
