@@ -792,17 +792,42 @@ i {
   display: flex;
   justify-content: center;
   align-items: center;
+  position: relative;
   width: 32px;
   height: 32px;
   font-size: 24px;
-  transition: color 200ms ease-in-out;
-  color: #8c8d96; }
+  color: #8c8d96;
+  border-radius: 50%;
+  transition: color 200ms ease-in-out, background-color 200ms ease-in-out; }
   .gnb-icon-button.is-menu {
     color: #3da5f5; }
     .gnb-icon-button.is-menu:active {
       color: #3186c4; }
+  .gnb-icon-button.is-cart i {
+    position: relative;
+    top: 1px;
+    right: 1px; }
   .gnb-icon-button:active {
     color: #3da5f5; }
+  .gnb-icon-button .badge {
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: block;
+    min-width: 16px;
+    padding: 0 4px;
+    height: 16px;
+    font-size: 10px;
+    line-height: 16px;
+    letter-spacing: -0.01em;
+    color: #ffffff;
+    background-color: #f86d7d;
+    border-radius: 8px;
+    text-align: center; }
+  @media screen and (min-width: 768px) {
+    .gnb-icon-button:hover {
+      color: #ffffff;
+      background-color: #3da5f5; } }
 
 /*
 * mobile (<768px)
