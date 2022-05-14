@@ -783,6 +783,22 @@ i {
     color: #3f4150;
     font-weight: 700; }
 
+.gnb-icon-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 32px;
+  height: 32px;
+  font-size: 24px;
+  transition: color 200ms ease-in-out;
+  color: #8c8d96; }
+  .gnb-icon-button.is-menu {
+    color: #3da5f5; }
+    .gnb-icon-button.is-menu:active {
+      color: #3186c4; }
+  .gnb-icon-button:active {
+    color: #3da5f5; }
+
 /*
 * mobile (<768px)
 */
@@ -878,18 +894,8 @@ i {
     display: flex;
     justify-content: flex-end;
     align-items: center; }
-  .gnb-right .gnb-search-button {
+  .gnb-right .gnb-icon-button.is-search {
     margin-right: 4px; }
-  .gnb-icon-button {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 32px;
-    height: 32px;
-    font-size: 24px;
-    color: #8c8d96; }
-  .gnb-menu-button {
-    color: #3da5f5; }
   .gnb .logo {
     position: absolute;
     top: 50%;
