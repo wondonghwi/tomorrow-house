@@ -1,7 +1,3 @@
-body {
-  background-color: $black;
-}
-
 .sidebar {
   width: 240px;
   padding: 32px 24px;
@@ -32,13 +28,23 @@ body {
 
   &-user {
     a {
+      width: 100%;
       @include flexbox(start);
       @include text-style(14, $primary);
       font-weight: 700;
     }
 
     .avatar-24 {
+      flex-grow: 0;
+      flex-shrink: 0;
       margin-right: 8px;
+    }
+
+    .username {
+      flex-grow: 1;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      white-space: nowrap;
     }
   }
 

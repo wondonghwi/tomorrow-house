@@ -430,6 +430,10 @@ p {
 .avatar-24, .avatar-32 {
   display: block;
   overflow: hidden;
+  background-image: url("/assets/images/img-user-default.png");
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: contain;
   border-radius: 50%; }
   .avatar-24 img, .avatar-32 img {
     display: block;
@@ -835,6 +839,10 @@ i {
     width: 32px;
     height: 32px;
     overflow: hidden;
+    background-image: url("/assets/images/img-user-default.png");
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
     border: 3px solid #ffffff;
     border-radius: 50%;
     transition: border-color 200ms ease-in-out; }
@@ -1044,9 +1052,6 @@ i {
     .gnb-right .button-group {
       margin-left: 24px; } }
 
-body {
-  background-color: #000000; }
-
 .sidebar {
   width: 240px;
   padding: 32px 24px;
@@ -1069,6 +1074,7 @@ body {
     align-items: center;
     height: 88px; }
   .sidebar-user a {
+    width: 100%;
     display: flex;
     justify-content: flex-start;
     align-items: center;
@@ -1078,7 +1084,14 @@ body {
     color: #3f4150;
     font-weight: 700; }
   .sidebar-user .avatar-24 {
+    flex-grow: 0;
+    flex-shrink: 0;
     margin-right: 8px; }
+  .sidebar-user .username {
+    flex-grow: 1;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap; }
   .sidebar-auth {
     display: flex;
     justify-content: space-between;
