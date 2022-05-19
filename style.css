@@ -1044,4 +1044,46 @@ i {
     .gnb-right .button-group {
       margin-left: 24px; } }
 
+body {
+  background-color: #000000; }
+
+.sidebar {
+  width: 240px;
+  padding: 32px 24px;
+  background-color: #ffffff; }
+  .sidebar-header {
+    padding: 0 12px; }
+    .sidebar-header .logo {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center; }
+      .sidebar-header .logo a {
+        display: block; }
+      .sidebar-header .logo img {
+        display: block;
+        width: auto;
+        height: 20px; }
+  .sidebar-user, .sidebar-auth {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 88px; }
+  .sidebar-user a {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: -0.01em;
+    color: #3f4150;
+    font-weight: 700; }
+  .sidebar-user .avatar-24 {
+    margin-right: 8px; }
+  .sidebar-auth {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .sidebar-auth a {
+      width: 80px; }
+
 /*# sourceMappingURL=style.css.map */
