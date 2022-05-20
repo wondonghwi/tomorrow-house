@@ -904,11 +904,17 @@ i {
 .drawer-menu.is-active .drawer-menu-button {
   color: #3da5f5; }
 
+.drawer-menu.is-open.is-community .drawer-menu-content {
+  max-height: 296px; }
+
+.drawer-menu.is-open.is-store .drawer-menu-content {
+  max-height: 332px; }
+
+.drawer-menu.is-open.is-export .drawer-menu-content {
+  max-height: 80px; }
+
 .drawer-menu.is-open .drawer-menu-button i:last-child {
   transform: translateY(-50%) rotate(180deg); }
-
-.drawer-menu.is-open .drawer-menu-content {
-  max-height: 152px; }
 
 .drawer-menu.is-open .drawer-menu-list {
   padding-bottom: 8px; }
