@@ -997,30 +997,33 @@ i {
     height: 44px;
     padding: 0 8px; }
 
-.search-history-item .search-history-list {
-  position: relative; }
-
-.search-history-item .word-button {
-  font-size: 16px;
-  line-height: 24px;
-  letter-spacing: -0.01em;
-  color: #3f4150;
-  width: 100%;
-  font-weight: 400;
-  padding: 10px 32px 10px 8px;
-  text-align: left; }
-
-.search-history-item .delete-button {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  position: absolute;
-  top: 6px;
-  right: 0;
-  width: 32px;
-  height: 32px;
-  font-size: 16px;
-  color: #b2b3b9; }
+.search-history-item {
+  position: relative;
+  border-radius: 2px; }
+  .search-history-item:hover {
+    background-color: #f7f8fa; }
+  .search-history-item .word-button {
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.01em;
+    color: #3f4150;
+    width: 100%;
+    font-weight: 400;
+    padding: 10px 32px 10px 8px;
+    text-align: left; }
+  .search-history-item .delete-button {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 6px;
+    right: 0;
+    width: 32px;
+    height: 32px;
+    font-size: 16px;
+    color: #b2b3b9; }
+    .search-history-item .delete-button:hover {
+      color: #3f4150; }
 
 /*
 * mobile (<768px)
