@@ -835,6 +835,12 @@ i {
 
 .my-menu {
   position: relative; }
+  .my-menu.is-active .my-menu-button {
+    border-color: #3da5f5; }
+  .my-menu.is-active .my-menu-content {
+    opacity: 1;
+    visibility: visible;
+    transform: translate3d(-50%, 0, 0); }
   .my-menu-button {
     width: 32px;
     height: 32px;
@@ -846,7 +852,7 @@ i {
     border: 3px solid #ffffff;
     border-radius: 50%;
     transition: border-color 200ms ease-in-out; }
-    .my-menu-button:hover, .my-menu-button.is-active {
+    .my-menu-button:hover {
       border-color: #3da5f5; }
     .my-menu-button img {
       display: block;
@@ -859,7 +865,11 @@ i {
     transform: translateX(-50%);
     top: 52px;
     border-radius: 4px;
-    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.18); }
+    opacity: 0;
+    visibility: hidden;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.18);
+    transform: translate3d(-50%, -10px, 0);
+    transition: visibility 200ms ease-in-out, opacity 200ms ease-in-out, transform 200ms ease-in-out; }
     .my-menu-content::before, .my-menu-content::after {
       position: absolute;
       left: 50%;
