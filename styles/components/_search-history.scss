@@ -1,0 +1,50 @@
+.search-history {
+  $close-button-size: 32px;
+
+  &-header {
+    @include flexbox(between);
+
+    .title,
+    button {
+      @include text-style(13, $primary);
+      font-weight: 400;
+    }
+  }
+
+  &-content {
+    margin-bottom: 8px;
+
+    .placeholder {
+      @include flexbox(start);
+      @include text-style(16, $tertiary);
+      width: 100%;
+      height: 44px;
+      padding: 0 8px;
+    }
+  }
+
+  &-item {
+    .search-history-list {
+      position: relative;
+    }
+
+    .word-button {
+      @include text-style(16, $primary);
+      width: 100%;
+      font-weight: 400;
+      padding: 10px $close-button-size 10px 8px;
+      text-align: left;
+    }
+
+    .delete-button {
+      @include flexbox;
+      position: absolute;
+      top: 6px;
+      right: 0;
+      width: $close-button-size;
+      height: $close-button-size;
+      font-size: 16px;
+      color: $tertiary;
+    }
+  }
+}

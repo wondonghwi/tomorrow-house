@@ -971,6 +971,57 @@ i {
   font-size: 16px;
   color: #f86d7d; }
 
+.search-history-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
+  .search-history-header .title,
+  .search-history-header button {
+    font-size: 13px;
+    line-height: 20px;
+    letter-spacing: -0.01em;
+    color: #3f4150;
+    font-weight: 400; }
+
+.search-history-content {
+  margin-bottom: 8px; }
+  .search-history-content .placeholder {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    font-size: 16px;
+    line-height: 24px;
+    letter-spacing: -0.01em;
+    color: #b2b3b9;
+    width: 100%;
+    height: 44px;
+    padding: 0 8px; }
+
+.search-history-item .search-history-list {
+  position: relative; }
+
+.search-history-item .word-button {
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.01em;
+  color: #3f4150;
+  width: 100%;
+  font-weight: 400;
+  padding: 10px 32px 10px 8px;
+  text-align: left; }
+
+.search-history-item .delete-button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: absolute;
+  top: 6px;
+  right: 0;
+  width: 32px;
+  height: 32px;
+  font-size: 16px;
+  color: #b2b3b9; }
+
 /*
 * mobile (<768px)
 */
@@ -1225,6 +1276,8 @@ i {
   padding: 12px 0;
   z-index: 30;
   background-color: #ffffff; }
+  .search-modal-header {
+    margin-bottom: 20px; }
   .search-modal-form {
     display: flex;
     justify-content: space-between;

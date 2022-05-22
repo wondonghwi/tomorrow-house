@@ -8,6 +8,10 @@
   z-index: $search-modal-level;
   background-color: $white;
 
+  &-header {
+    margin-bottom: 20px;
+  }
+
   &-form {
     @include flexbox(between);
     .input-group {
