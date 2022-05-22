@@ -48,9 +48,35 @@
                 </button>
               </div>
               <div class="gnb-right">
-                <div class="input-group lg-only">
-                  <i class="ic-search"></i>
-                  <input class="form-input" type="text" placeholder="스토어 검색" />
+                <div class="gnb-search">
+                  <div class="input-group lg-only">
+                    <i class="ic-search"></i>
+                    <input class="form-input" type="text" placeholder="스토어 검색" />
+                  </div>
+                  <section class="search-history">
+                    <header class="search-history-header">
+                      <h2 class="title">최근검색어</h2>
+                      <button type="button">전체 삭제</button>
+                    </header>
+
+                    <!--NOTE : 최근검색어가 존재할 경우-->
+                    <div class="search-history-content">
+                      <ol class="search-history-list">
+                        <li class="search-history-item">
+                          <button type="button" class="word-button">원동휘</button>
+                          <button type="button" class="delete-button"><i class="ic-close"></i></button>
+                        </li>
+                        <li class="search-history-item">
+                          <button type="button" class="word-button">동휘</button>
+                          <button type="button" class="delete-button"><i class="ic-close"></i></button>
+                        </li>
+                        <li class="search-history-item">
+                          <button type="button" class="word-button">원휘</button>
+                          <button type="button" class="delete-button"><i class="ic-close"></i></button>
+                        </li>
+                      </ol>
+                    </div>
+                  </section>
                 </div>
 
                 <!--로그인한 경우-->

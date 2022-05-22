@@ -31,6 +31,10 @@
 
   // 모바일
   @include responsive(T) {
+    &-wrapper {
+      height: 80px;
+    }
+
     &-left {
       @include flexbox(start);
     }
@@ -81,16 +85,32 @@
 
   // 데스크탑
   @include responsive(D) {
-    &-wrapper {
-      height: 80px;
-    }
-
-    &-right {
+    &-search {
+      position: relative;
+      width: 264px;
+      margin-right: 24px;
       .input-group {
-        width: 264px;
+        width: 100%;
       }
-      .button-group {
-        margin-left: 24px;
+      .search-history {
+        position: absolute;
+        top: calc(100% + 8px);
+        left: 0;
+        display: none;
+        width: 100%;
+        padding: 16px 8px 8px;
+        background-color: $white;
+        border: 1px solid $border;
+        border-radius: 4px;
+        box-shadow: $dropdown-shadow;
+
+        &.is-active {
+          display: block;
+        }
+
+        &-header {
+          padding: 0 8px;
+        }
       }
     }
   }
