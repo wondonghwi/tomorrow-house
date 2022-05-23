@@ -5,17 +5,19 @@
   }
 
   &-list {
-    position: relative;
-    left: -8px;
+    margin-left: -15px;
+    padding: 0 7px;
     @include inline-flexbox(start);
+    height: 40px;
     white-space: nowrap;
+    border-bottom: 1px solid $border;
   }
 
   &-item {
     &.is-active {
       a {
         @include text-style(13, $blue);
-        border-bottom: 2px solid $blue;
+        border-bottom-color: $blue;
       }
     }
 
@@ -25,6 +27,7 @@
       font-weight: 700;
       padding: 0 8px;
       height: 40px;
+      border-bottom: 2px solid transparent;
     }
 
     .ic-new {
