@@ -3,15 +3,15 @@
   &::-webkit-scrollbar {
     display: none; /* Chrome, Safari, Opera*/
   }
-  //border-bottom: 1px solid $border;
 
   &-list {
-    @include flexbox(start);
+    position: relative;
+    left: -8px;
+    @include inline-flexbox(start);
+    white-space: nowrap;
   }
 
   &-item {
-    flex-shrink: 0;
-
     &.is-active {
       a {
         @include text-style(13, $blue);
