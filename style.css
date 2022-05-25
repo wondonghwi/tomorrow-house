@@ -791,7 +791,8 @@ i {
     color: #3f4150;
     display: block;
     padding: 8px;
-    font-weight: 700; }
+    font-weight: 700;
+    white-space: nowrap; }
 
 .gnb-icon-button {
   display: flex;
@@ -1352,10 +1353,31 @@ i {
     font-size: 13px;
     line-height: 20px;
     letter-spacing: -0.01em;
-    color: #000000;
+    color: #191a20;
     font-weight: 700;
-    padding: 0 8px;
     height: 40px;
+    padding: 0 8px;
     border-bottom: 2px solid transparent; }
+  @media screen and (min-width: 768px) {
+    .lnb {
+      height: 50px;
+      overflow-x: visible;
+      border-bottom: 1px solid #e0e2e7; }
+      .lnb-list {
+        height: auto;
+        padding: 0;
+        margin-left: 0;
+        border-bottom: 0; }
+      .lnb-item.is-active a {
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: -0.01em; }
+      .lnb-item a {
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: -0.01em;
+        height: 50px; }
+        .lnb-item a:hover {
+          color: #3da5f5; } }
 
 /*# sourceMappingURL=style.css.map */
