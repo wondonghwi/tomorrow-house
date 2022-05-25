@@ -1,12 +1,15 @@
 .lnb {
+  $lin-link-padding: 8px;
+  $grid-margin: $sm-margin + $gutter / 2;
+
   overflow-x: auto;
   &::-webkit-scrollbar {
     display: none; /* Chrome, Safari, Opera*/
   }
 
   &-list {
-    margin-left: -15px;
-    padding: 0 7px;
+    margin-left: -#{$grid-margin};
+    padding: 0 #{$grid-margin - $lin-link-padding};
     @include inline-flexbox(start);
     height: 40px;
     white-space: nowrap;
@@ -28,10 +31,6 @@
       padding: 0 8px;
       height: 40px;
       border-bottom: 2px solid transparent;
-    }
-
-    .ic-new {
-      color: $red;
     }
   }
 }

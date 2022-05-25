@@ -760,6 +760,7 @@ i {
   content: '\e90c'; }
 
 .ic-new:before {
+  color: #f86d7d;
   content: '\e90d'; }
 
 .ic-search:before {
@@ -978,8 +979,7 @@ i {
   font-weight: 700; }
 
 .drawer-menu-item .ic-new {
-  font-size: 16px;
-  color: #f86d7d; }
+  font-size: 16px; }
 
 .search-history-header {
   display: flex;
@@ -1356,7 +1356,5 @@ i {
     padding: 0 8px;
     height: 40px;
     border-bottom: 2px solid transparent; }
-  .lnb-item .ic-new {
-    color: #f86d7d; }
 
 /*# sourceMappingURL=style.css.map */
