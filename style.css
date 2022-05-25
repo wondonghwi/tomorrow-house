@@ -1280,7 +1280,8 @@ i {
       .sidebar-user-menu a:active {
         color: #3da5f5; }
   .sidebar::-webkit-scrollbar {
-    display: none; }
+    display: none !important;
+    /* Chrome, Safari, Opera*/ }
 
 .overlay {
   position: fixed;
@@ -1327,7 +1328,7 @@ i {
 .lnb {
   overflow-x: auto; }
   .lnb::-webkit-scrollbar {
-    display: none;
+    display: none !important;
     /* Chrome, Safari, Opera*/ }
   .lnb-list {
     margin-left: -15px;
