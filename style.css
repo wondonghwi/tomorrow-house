@@ -1124,12 +1124,13 @@ i {
 
 .gnb {
   position: relative;
+  background-color: #ffffff;
   border-bottom: 1px solid #e0e2e7; }
   .gnb-wrapper {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 50px; }
+    height: 49px; }
   .gnb-right .button-group {
     display: flex;
     justify-content: flex-end;
@@ -1382,6 +1383,23 @@ i {
         height: 50px; }
         .lnb-item a:hover {
           color: #3da5f5; } }
+
+.global-header {
+  height: 90px; }
+  .global-header .gnb,
+  .global-header .lnb {
+    position: fixed;
+    left: 0;
+    width: 100%; }
+  .global-header .gnb {
+    top: 0; }
+  .global-header .lnb {
+    top: 50px; }
+  @media screen and (min-width: 768px) {
+    .global-header {
+      height: 130px; }
+      .global-header .lnb {
+        top: 80px; } }
 
 .global-footer {
   padding: 32px 0 40px 0;
