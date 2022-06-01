@@ -1,39 +1,41 @@
 .product-carousel {
   $grid-margin: 15px;
+
   position: relative;
   &-slider {
-    margin: 0 -#{grid-margin};
+    margin: 0 -#{$grid-margin};
   }
-  margin-left: -15px;
-  margin-right: -15px;
+
   &-thumbnail {
     @include pos-center-x;
     bottom: 16px;
-    .thumbnail {
-      &-list {
-        @include flexbox;
-      }
-      &-item {
-        &.tns-nav-active {
-          button {
-            opacity: 1;
-            transform: scale(1.333333);
-          }
-        }
+  }
 
-        @include flexbox;
-        margin: 0 4px;
-        button {
-          width: 6px;
-          height: 6px;
-          background-color: white;
-          opacity: 0.7;
-          border-radius: 50%;
-          transition: transform 100ms ease-in-out, opacity 100ms ease-in-out;
-          img {
-            display: none;
-          }
-        }
+  .thumbnail-list {
+    @include flexbox;
+  }
+
+  .thumbnail-item {
+    &.tns-nav-active {
+      button {
+        opacity: 1;
+        transform: scale(1.333333);
+      }
+    }
+
+    @include flexbox;
+    margin: 0 4px;
+
+    button {
+      width: 6px;
+      height: 6px;
+      background-color: white;
+      opacity: 0.7;
+      border-radius: 50%;
+      transition: transform 100ms ease-in-out, opacity 100ms ease-in-out;
+
+      img {
+        display: none;
       }
     }
   }
@@ -42,5 +44,51 @@
     display: block;
     width: 100%;
     height: auto;
+  }
+
+  @include responsive(T) {
+    padding-right: 30px;
+    &-slider {
+      margin: 0 0 8px 0;
+      overflow: hidden;
+      border-radius: 4px;
+    }
+
+    &-thumbnail {
+      position: static;
+      transform: none;
+    }
+
+    .thumbnail-list {
+      justify-content: start;
+    }
+
+    .thumbnail-item {
+      margin: 0 8px 0 0;
+
+      &.tns-nav-active {
+        button {
+          border: 2px solid $blue;
+          transform: none;
+        }
+      }
+
+      button {
+        @include flexbox;
+        width: 56px;
+        height: 56px;
+        overflow: hidden;
+        border-radius: 4px;
+        opacity: 1;
+        img {
+          width: 56px;
+          display: block;
+        }
+      }
+    }
+
+    .thumbnail-item:last-child {
+      margin: 0;
+    }
   }
 }
