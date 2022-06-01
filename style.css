@@ -1144,23 +1144,23 @@ i {
       display: flex;
       justify-content: flex-end;
       align-items: flex-start;
-      flex-direction: row-reverse; } }
-  .product-carousel-slider {
-    width: 500px;
-    height: 500px; }
-  .product-carousel-thumbnail {
-    margin-right: 8px; }
-  .product-carousel .thumbnail-list {
-    flex-direction: column; }
-  .product-carousel .thumbnail-item {
-    margin-right: 0;
-    margin-bottom: 8px; }
-    .product-carousel .thumbnail-item button,
-    .product-carousel .thumbnail-item button img {
-      width: 75px;
-      height: 75px; }
-  .product-carousel .thumbnail-item:last-child {
-    margin: 0; }
+      flex-direction: row-reverse; }
+      .product-carousel-slider {
+        width: 500px;
+        height: 500px; }
+      .product-carousel-thumbnail {
+        margin-right: 8px; }
+      .product-carousel .thumbnail-list {
+        flex-direction: column; }
+      .product-carousel .thumbnail-item {
+        margin-right: 0;
+        margin-bottom: 8px; }
+        .product-carousel .thumbnail-item button,
+        .product-carousel .thumbnail-item button img {
+          width: 75px;
+          height: 75px; }
+      .product-carousel .thumbnail-item:last-child {
+        margin: 0; } }
 
 /*
 * mobile (<768px)
