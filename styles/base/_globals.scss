@@ -11,22 +11,29 @@
 }
 
 .sm-only {
+  // NOTE : 허용범위 = 0 ~ 767px
+  //768px 이상 적용
   @media screen and (min-width: $md-breakpoint) {
     display: none !important;
   }
 }
 
 .md-only {
+  // NOTE : 허용범위 = 768px ~ 1199px
+  //767px 이하 적용
   @media screen and (max-width: $md-breakpoint - 1) {
     display: none !important;
   }
 
+  //1200px 이상 적용
   @media screen and (min-width: $lg-breakpoint) {
     display: none !important;
   }
 }
 
 .lg-only {
+  // NOTE : 허용범위 = 1200px ~
+  //1199px 이하 적용
   @media screen and (max-width: $lg-breakpoint - 1) {
     display: none !important;
   }
