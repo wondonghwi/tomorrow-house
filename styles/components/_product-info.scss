@@ -89,63 +89,67 @@
 
   @include responsive(T) {
     padding: 0;
-  }
 
-  &-header {
-    .info-brand {
-      display: inline-block;
-      margin-bottom: 8px;
-    }
-
-    .info-title {
-      @include text-style(24);
-      margin-bottom: 8px;
-    }
-
-    .info-review {
-      .star-rating {
-        @include star-rating(16px);
+    &-header {
+      .info-brand {
+        display: inline-block;
+        margin-bottom: 8px;
       }
-      p strong {
-        margin-right: -3px;
+
+      .info-title {
+        @include text-style(24);
+        margin-bottom: 8px;
       }
-    }
-  }
 
-  &-price {
-    .info-price-wrapper {
-      @include flexbox(start, end);
-
-      .discount-rate {
-        margin-right: 16px;
-
-        .rate {
-          font-size: 44px;
-          line-height: 36px;
+      .info-review {
+        .star-rating {
+          @include star-rating(16px);
         }
-        .percent {
-          line-height: 20px;
-        }
-      }
-
-      .info-sale-price {
-        margin-bottom: 0;
-
-        .price-32 {
-          margin-right: 8px;
+        p strong {
+          margin-right: -3px;
         }
       }
     }
-    .info-point {
-      margin-bottom: 20px;
+
+    &-price {
+      .info-price-wrapper {
+        @include flexbox(start, end);
+
+        .discount-rate {
+          margin-right: 16px;
+
+          .rate {
+            font-size: 44px;
+            line-height: 36px;
+          }
+          .percent {
+            line-height: 20px;
+          }
+        }
+
+        .info-sale-price {
+          margin-bottom: 0;
+
+          .price-32 {
+            margin-right: 8px;
+          }
+        }
+      }
+      .info-point {
+        margin-bottom: 20px;
+      }
+    }
+    &-delivery {
+      padding-top: 20px;
+      padding-bottom: 20px;
+      border-bottom: 1px solid $border;
+      span {
+        margin-bottom: 8px;
+      }
     }
   }
-  &-delivery {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    border-bottom: 1px solid $border;
-    span {
-      margin-bottom: 8px;
-    }
+
+  @include responsive(D) {
+    margin-bottom: 20px;
   }
 }

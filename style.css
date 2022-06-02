@@ -1264,49 +1264,81 @@ i {
       margin-bottom: 2px; }
   @media screen and (min-width: 768px) {
     .product-info {
-      padding: 0; } }
-  .product-info-header .info-brand {
-    display: inline-block;
-    margin-bottom: 8px; }
-  .product-info-header .info-title {
-    font-size: 24px;
-    line-height: 34px;
-    letter-spacing: -0.01em;
-    margin-bottom: 8px; }
-  .product-info-header .info-review .star-rating {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    font-size: 16px; }
-    .product-info-header .info-review .star-rating .ic-star {
-      color: #e0e2e7; }
-      .product-info-header .info-review .star-rating .ic-star.is-active {
-        color: #3da5f5; }
-  .product-info-header .info-review p strong {
-    margin-right: -3px; }
-  .product-info-price .info-price-wrapper {
-    display: flex;
-    justify-content: flex-start;
-    align-items: flex-end; }
-    .product-info-price .info-price-wrapper .discount-rate {
-      margin-right: 16px; }
-      .product-info-price .info-price-wrapper .discount-rate .rate {
-        font-size: 44px;
-        line-height: 36px; }
-      .product-info-price .info-price-wrapper .discount-rate .percent {
-        line-height: 20px; }
-    .product-info-price .info-price-wrapper .info-sale-price {
-      margin-bottom: 0; }
-      .product-info-price .info-price-wrapper .info-sale-price .price-32 {
-        margin-right: 8px; }
-  .product-info-price .info-point {
+      padding: 0; }
+      .product-info-header .info-brand {
+        display: inline-block;
+        margin-bottom: 8px; }
+      .product-info-header .info-title {
+        font-size: 24px;
+        line-height: 34px;
+        letter-spacing: -0.01em;
+        margin-bottom: 8px; }
+      .product-info-header .info-review .star-rating {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        font-size: 16px; }
+        .product-info-header .info-review .star-rating .ic-star {
+          color: #e0e2e7; }
+          .product-info-header .info-review .star-rating .ic-star.is-active {
+            color: #3da5f5; }
+      .product-info-header .info-review p strong {
+        margin-right: -3px; }
+      .product-info-price .info-price-wrapper {
+        display: flex;
+        justify-content: flex-start;
+        align-items: flex-end; }
+        .product-info-price .info-price-wrapper .discount-rate {
+          margin-right: 16px; }
+          .product-info-price .info-price-wrapper .discount-rate .rate {
+            font-size: 44px;
+            line-height: 36px; }
+          .product-info-price .info-price-wrapper .discount-rate .percent {
+            line-height: 20px; }
+        .product-info-price .info-price-wrapper .info-sale-price {
+          margin-bottom: 0; }
+          .product-info-price .info-price-wrapper .info-sale-price .price-32 {
+            margin-right: 8px; }
+      .product-info-price .info-point {
+        margin-bottom: 20px; }
+      .product-info-delivery {
+        padding-top: 20px;
+        padding-bottom: 20px;
+        border-bottom: 1px solid #e0e2e7; }
+        .product-info-delivery span {
+          margin-bottom: 8px; } }
+  @media screen and (min-width: 1200px) {
+    .product-info {
+      margin-bottom: 20px; } }
+
+.order-form {
+  margin-bottom: 40px; }
+  .order-form .order-inputs {
     margin-bottom: 20px; }
-  .product-info-delivery {
-    padding-top: 20px;
-    padding-bottom: 20px;
-    border-bottom: 1px solid #e0e2e7; }
-    .product-info-delivery span {
+    .order-form .order-inputs .select-group {
       margin-bottom: 8px; }
+      .order-form .order-inputs .select-group:last-child {
+        margin-bottom: 0; }
+  .order-form .order-summary {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+    .order-form .order-summary dt {
+      font-size: 13px;
+      line-height: 20px;
+      letter-spacing: -0.01em;
+      color: #191a20;
+      font-weight: 700; }
+  .order-form .button-group {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .order-form .button-group button {
+      width: 50%;
+      margin-right: 8px; }
+      .order-form .button-group button:last-child {
+        margin-right: 0; }
 
 /*
 * mobile (<768px)
