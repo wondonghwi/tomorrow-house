@@ -23,7 +23,7 @@
   }
 
   .currency {
-    font-weight: bold;
+    font-weight: 700;
   }
 }
 
@@ -31,6 +31,7 @@
   .amount {
     font-size: 16px;
   }
+
   .currency {
     @include text-style(14);
   }
@@ -40,6 +41,7 @@
   .amount {
     font-size: 20px;
   }
+
   .currency {
     @include text-style(16);
   }
@@ -49,11 +51,12 @@
   .amount {
     font-size: 32px;
   }
+
   .currency {
     font-size: 28px;
     font-weight: 700;
     line-height: 32px;
-    letter-spacing: 0.02em;
+    letter-spacing: -0.02em;
   }
 }
 

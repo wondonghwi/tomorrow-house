@@ -516,7 +516,7 @@ p {
   .price-16 .currency,
   .price-20 .currency,
   .price-32 .currency {
-    font-weight: bold; }
+    font-weight: 700; }
 
 .price-16 .amount {
   font-size: 16px; }
@@ -541,7 +541,7 @@ p {
   font-size: 28px;
   font-weight: 700;
   line-height: 32px;
-  letter-spacing: 0.02em; }
+  letter-spacing: -0.02em; }
 
 .price-off {
   color: #8c8d96; }
