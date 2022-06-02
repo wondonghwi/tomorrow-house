@@ -1162,6 +1162,76 @@ i {
       .product-carousel .thumbnail-item:last-child {
         margin: 0; } }
 
+.product-info {
+  padding: 20px 0; }
+  .product-info-header {
+    margin-bottom: 16px; }
+    .product-info-header .info-brand {
+      font-size: 13px;
+      line-height: 20px;
+      letter-spacing: -0.01em;
+      color: #3da5f5;
+      font-weight: 700; }
+      .product-info-header .info-brand:active {
+        opacity: 0.4; }
+    .product-info-header .info-title {
+      font-size: 18px;
+      line-height: 28px;
+      letter-spacing: -0.02em;
+      color: #191a20;
+      margin-bottom: 4px;
+      font-weight: 400; }
+    .product-info-header .info-review {
+      display: inline-flex;
+      justify-content: center;
+      align-items: center; }
+    .product-info-header .star-rating-13 {
+      margin-right: 8px; }
+    .product-info-header p {
+      font-size: 13px;
+      line-height: 20px;
+      letter-spacing: -0.01em;
+      color: #3da5f5;
+      font-weight: bold; }
+  .product-info-price {
+    margin-bottom: 16px; }
+    .product-info-price .info-original-price,
+    .product-info-price .info-sale-price {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center; }
+    .product-info-price .discount-rate {
+      display: inline-flex;
+      justify-content: flex-start;
+      align-items: center;
+      font-size: 20px;
+      line-height: 24px;
+      font-weight: 700;
+      color: #3da5f5; }
+      .product-info-price .discount-rate .rate {
+        font-family: "Tahoma", sans-serif; }
+      .product-info-price .discount-rate .percent {
+        font-family: "DM Sans", sans-serif; }
+    .product-info-price .price-20 {
+      margin-right: 4px; }
+      .product-info-price .price-20 .currency {
+        height: 20px; }
+    .product-info-price .info-sale-price {
+      margin-bottom: 12px; }
+    .product-info-price .info-point {
+      font-size: 13px;
+      line-height: 20px;
+      letter-spacing: -0.01em;
+      color: #8c8d96; }
+      .product-info-price .info-point strong {
+        color: #3da5f5; }
+  .product-info-delivery {
+    padding-top: 12px;
+    border-top: 1px solid #e0e2e7; }
+    .product-info-delivery span {
+      display: block;
+      margin-bottom: 2px; }
+
 /*
 * mobile (<768px)
 */
