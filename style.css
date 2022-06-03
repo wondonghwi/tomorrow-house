@@ -1912,4 +1912,36 @@ i {
     .global-footer-contact:hover {
       opacity: 0.5; } }
 
+.product-tab {
+  width: 100%;
+  height: 40px;
+  background-color: #ffffff;
+  border-bottom: 1px solid #e0e2e7; }
+  .product-tab-list {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 -15px; }
+  .product-tab-item {
+    width: 20%; }
+    .product-tab-item.is-active button {
+      color: #3da5f5;
+      border-bottom: 2px solid #3da5f5; }
+    .product-tab-item button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-size: 13px;
+      line-height: 20px;
+      letter-spacing: -0.01em;
+      color: #191a20;
+      width: 100%;
+      height: 40px;
+      font-weight: 700;
+      white-space: nowrap;
+      border-bottom: 2px solid transparent; }
+    .product-tab-item .badge {
+      margin-left: 4px;
+      color: #8c8d96; }
+
 /*# sourceMappingURL=style.css.map */
