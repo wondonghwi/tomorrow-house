@@ -1942,6 +1942,8 @@ i {
       background-color: #f7f8fa;
       height: 54px;
       border-bottom: 0; }
+      .product-tab-list {
+        margin: 0; }
       .product-tab-item button {
         font-size: 16px;
         line-height: 24px;

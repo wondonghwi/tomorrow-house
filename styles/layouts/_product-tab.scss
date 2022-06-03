@@ -42,6 +42,10 @@
     height: 54px;
     border-bottom: 0;
 
+    &-list {
+      margin: 0;
+    }
+
     &-item {
       button {
         @include text-style(16);
