@@ -1943,5 +1943,20 @@ i {
     .product-tab-item .badge {
       margin-left: 4px;
       color: #8c8d96; }
+  @media screen and (min-width: 768px) {
+    .product-tab {
+      background-color: #f7f8fa;
+      height: 54px;
+      border-bottom: 0; }
+      .product-tab-item button {
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: -0.01em;
+        height: 54px; }
+      .product-tab-item .badge {
+        margin-left: 8px; } }
+  @media screen and (min-width: 1200px) {
+    .product-tab-item button:hover {
+      color: #3da5f5; } }
 
 /*# sourceMappingURL=style.css.map */
