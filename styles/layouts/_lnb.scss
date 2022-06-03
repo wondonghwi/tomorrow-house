@@ -4,6 +4,8 @@
   $lin-link-padding: 8px;
   $grid-margin: $sm-margin + $gutter / 2;
 
+  background-color: $white;
+
   @include no-scrollbar;
   overflow-x: auto;
 
