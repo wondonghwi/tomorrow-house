@@ -1201,25 +1201,25 @@ i {
       margin-bottom: 4px;
       font-weight: 400; }
     .product-info-header .info-review {
-      display: inline-flex;
-      justify-content: center;
-      align-items: center; }
-    .product-info-header .star-rating {
       display: flex;
       justify-content: flex-start;
-      align-items: center;
-      font-size: 13px;
-      margin-right: 8px; }
-      .product-info-header .star-rating .ic-star {
-        color: #e0e2e7; }
-        .product-info-header .star-rating .ic-star.is-active {
-          color: #3da5f5; }
-    .product-info-header p {
-      font-size: 13px;
-      line-height: 20px;
-      letter-spacing: -0.01em;
-      color: #3da5f5;
-      font-weight: bold; }
+      align-items: center; }
+      .product-info-header .info-review .star-rating {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+        font-size: 13px;
+        margin-right: 8px; }
+        .product-info-header .info-review .star-rating .ic-star {
+          color: #e0e2e7; }
+          .product-info-header .info-review .star-rating .ic-star.is-active {
+            color: #3da5f5; }
+      .product-info-header .info-review p {
+        font-size: 13px;
+        line-height: 20px;
+        letter-spacing: -0.01em;
+        color: #3da5f5;
+        font-weight: 700; }
   .product-info-price {
     margin-bottom: 16px; }
     .product-info-price .info-original-price,
@@ -1232,19 +1232,17 @@ i {
       justify-content: flex-start;
       align-items: center;
       font-size: 20px;
-      line-height: 24px;
       font-weight: 700;
+      line-height: 24px;
       color: #3da5f5; }
       .product-info-price .discount-rate .rate {
         font-family: "Tahoma", sans-serif; }
       .product-info-price .discount-rate .percent {
         font-family: "DM Sans", sans-serif; }
-    .product-info-price .price-20 {
-      margin-right: 4px; }
-      .product-info-price .price-20 .currency {
-        height: 20px; }
     .product-info-price .info-sale-price {
       margin-bottom: 12px; }
+    .product-info-price .price-20 {
+      margin-right: 4px; }
     .product-info-price .info-point {
       font-size: 13px;
       line-height: 20px;
@@ -1274,35 +1272,30 @@ i {
         letter-spacing: -0.01em;
         margin-bottom: 8px; }
       .product-info-header .info-review .star-rating {
-        display: flex;
-        justify-content: flex-start;
-        align-items: center;
         font-size: 16px; }
-        .product-info-header .info-review .star-rating .ic-star {
-          color: #e0e2e7; }
-          .product-info-header .info-review .star-rating .ic-star.is-active {
-            color: #3da5f5; }
       .product-info-header .info-review p strong {
         margin-right: -3px; }
       .product-info-price .info-price-wrapper {
         display: flex;
         justify-content: flex-start;
-        align-items: flex-end; }
-        .product-info-price .info-price-wrapper .discount-rate {
-          margin-right: 16px; }
-          .product-info-price .info-price-wrapper .discount-rate .rate {
-            font-size: 44px;
-            line-height: 36px; }
-          .product-info-price .info-price-wrapper .discount-rate .percent {
-            line-height: 20px; }
-        .product-info-price .info-price-wrapper .info-sale-price {
-          margin-bottom: 0; }
-          .product-info-price .info-price-wrapper .info-sale-price .price-32 {
-            margin-right: 8px; }
+        align-items: flex-end;
+        margin-bottom: 12px; }
+      .product-info-price .discount-rate {
+        align-items: flex-end;
+        margin-right: 16px; }
+        .product-info-price .discount-rate .rate {
+          font-size: 44px;
+          line-height: 36px; }
+        .product-info-price .discount-rate .percent {
+          line-height: 1; }
+      .product-info-price .info-sale-price {
+        margin-bottom: 0; }
+        .product-info-price .info-sale-price .price-32 {
+          margin-right: 8px; }
       .product-info-price .info-point {
         margin-bottom: 20px; }
       .product-info-delivery {
-        padding-top: 20px;
+        padding-top: 16px;
         padding-bottom: 20px;
         border-bottom: 1px solid #e0e2e7; }
         .product-info-delivery span {
@@ -1945,6 +1938,7 @@ i {
       color: #8c8d96; }
   @media screen and (min-width: 768px) {
     .product-tab {
+      margin-top: 40px;
       background-color: #f7f8fa;
       height: 54px;
       border-bottom: 0; }
