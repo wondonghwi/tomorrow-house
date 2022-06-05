@@ -1504,7 +1504,32 @@ i {
       width: 164px; } }
 
 .product-spec {
-  padding-top: 20px; }
+  position: relative;
+  height: 470px;
+  padding-top: 20px;
+  overflow: hidden; }
+  .product-spec.is-open {
+    height: auto; }
+    .product-spec.is-open .button-wrapper {
+      display: none; }
+  .product-spec .button-wrapper {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding-bottom: 20px;
+    background-color: #ffffff; }
+    .product-spec .button-wrapper::before {
+      content: '';
+      display: block;
+      position: absolute;
+      bottom: 75px;
+      left: 0;
+      width: 100%;
+      height: 64px;
+      background-image: linear-gradient(to top, #ffffff 0%, transparent 100%); }
+    .product-spec .button-wrapper button {
+      width: 100%; }
   .product-spec figure img {
     display: block;
     width: 100%;
