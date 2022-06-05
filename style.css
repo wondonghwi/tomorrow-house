@@ -1401,6 +1401,22 @@ i {
       line-height: 24px;
       letter-spacing: -0.01em; } }
 
+.product-section {
+  padding-bottom: 20px; }
+  .product-section-divider {
+    margin: 0 -15px;
+    height: 8px;
+    background-color: #e0e2e7; }
+  @media screen and (min-width: 768px) {
+    .product-section {
+      width: 100%;
+      max-width: 692px;
+      margin: 0 auto;
+      padding-bottom: 80px; } }
+  @media screen and (min-width: 1200px) {
+    .product-section {
+      margin-left: 0; } }
+
 .product-section-header {
   position: relative;
   display: flex;
@@ -1487,10 +1503,14 @@ i {
     .product-table th {
       width: 164px; } }
 
-.product-spec figure img {
-  display: block;
-  width: 100%;
-  height: auto; }
+.product-spec {
+  padding-top: 20px; }
+  .product-spec .button-wrapper {
+    display: none; }
+  .product-spec figure img {
+    display: block;
+    width: 100%;
+    height: auto; }
 
 /*
 * mobile (<768px)
