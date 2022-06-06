@@ -1803,34 +1803,40 @@ i {
       color: #b2b3b9; }
       .inquiry-card-header .misc strong {
         font-weight: 400; }
-  .inquiry-card-body {
+  .inquiry-card-body .question-content {
+    position: relative;
+    padding-left: 20px; }
+  .inquiry-card-body span,
+  .inquiry-card-body p {
     font-size: 13px;
     line-height: 20px;
     letter-spacing: -0.01em; }
-    .inquiry-card-body .question-content {
-      position: relative;
-      padding-left: 20px; }
-    .inquiry-card-body span {
-      position: absolute;
-      top: 0;
-      left: 0;
-      font-weight: 700;
-      color: #3da5f5; }
-    .inquiry-card-body p {
-      color: #3f4150; }
+  .inquiry-card-body span {
+    position: absolute;
+    left: 0;
+    font-weight: 700;
+    color: #3da5f5; }
+  .inquiry-card-body p {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    color: #3f4150; }
+    .inquiry-card-body p i {
+      margin-right: 8px;
+      font-size: 13px;
+      color: #b2b3b9; }
   @media screen and (min-width: 768px) {
     .inquiry-card-header {
       margin-bottom: 20px; }
-    .inquiry-card-body {
-      font-size: 14px;
+    .inquiry-card-body .question-content {
+      padding-left: 24px; }
+    .inquiry-card-body span,
+    .inquiry-card-body p {
+      font-size: 16px;
       line-height: 24px;
       letter-spacing: -0.01em; }
-      .inquiry-card-body .question-content {
-        padding-left: 24px; }
-      .inquiry-card-body span {
-        font-size: 16px;
-        line-height: 24px;
-        letter-spacing: -0.01em; } }
+    .inquiry-card-body p i {
+      font-size: 16px; } }
 
 /*
 * mobile (<768px)

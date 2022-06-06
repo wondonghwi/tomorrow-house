@@ -33,22 +33,32 @@
   }
 
   &-body {
-    @include text-style(13);
-
     .question-content {
       position: relative;
       padding-left: 20px;
     }
 
+    span,
+    p {
+      @include text-style(13);
+    }
+
     span {
       position: absolute;
-      top: 0;
       left: 0;
       font-weight: 700;
       color: $blue;
     }
+
     p {
+      @include flexbox(start);
       color: $primary;
+
+      i {
+        margin-right: 8px;
+        font-size: 13px;
+        color: $tertiary;
+      }
     }
   }
 
@@ -57,14 +67,19 @@
       margin-bottom: 20px;
     }
     &-body {
-      @include text-style(14);
-
       .question-content {
         padding-left: 24px;
       }
 
-      span {
+      span,
+      p {
         @include text-style(16);
+      }
+
+      p {
+        i {
+          font-size: 16px;
+        }
       }
     }
   }
