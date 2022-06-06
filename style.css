@@ -1644,7 +1644,9 @@ i {
         width: 0;
         height: 5px;
         background-color: #3da5f5;
-        border-radius: 2.5px; }
+        border-radius: 2.5px;
+        animation-name: slide-active-bar;
+        animation-duration: 1000ms; }
     .score-stats-item dd .count {
       font-weight: 400; }
 
@@ -1654,6 +1656,12 @@ i {
   .score-stats-item dd .bar-graph {
     width: 180px;
     margin-right: 8px; } }
+
+@keyframes slide-active-bar {
+  0% {
+    transform: translate3d(-100%, 0, 0); }
+  100% {
+    transform: translate3d(0, 0, 0); } }
 
 .review-card {
   padding: 20px 0; }
