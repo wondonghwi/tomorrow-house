@@ -1863,6 +1863,16 @@ i {
   .product-inquiry .inquiry-empty {
     padding: 28px 0; } }
 
+@media screen and (max-width: 767px) {
+  .product-shipment.is-open > .product-section-header {
+    display: none; }
+  .product-shipment.is-open .product-section,
+  .product-shipment.is-open .product-section-divider:last-child {
+    display: block; }
+  .product-shipment .product-section,
+  .product-shipment .product-section-divider:last-child {
+    display: none; } }
+
 /*
 * mobile (<768px)
 */
