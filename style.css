@@ -728,7 +728,7 @@ p {
     .pagination .page-item a,
     .pagination .page-item button {
       min-width: 26px;
-      padding: 0 4px; }
+      padding: 0 4px 1px; }
       .pagination .page-item a:hover,
       .pagination .page-item button:hover {
         color: #3da5f5; }
@@ -1747,6 +1747,11 @@ i {
     .review-card-header .avatar-24:hover,
     .review-card-header .username:hover {
       opacity: 0.4; } }
+
+.product-review .review-item {
+  border-bottom: 1px solid #e0e2e7; }
+  .product-review .review-item:last-child {
+    border-bottom: 0; }
 
 /*
 * mobile (<768px)
