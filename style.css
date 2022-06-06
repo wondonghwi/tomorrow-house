@@ -1838,6 +1838,19 @@ i {
     .inquiry-card-body p i {
       font-size: 16px; } }
 
+@media screen and (max-width: 767px) {
+  .product-inquiry {
+    padding-bottom: 0; }
+    .product-inquiry.is-open .product-section-header .text-button,
+    .product-inquiry.is-open .product-section-content {
+      display: block;
+      padding-bottom: 20px; }
+    .product-inquiry.is-open .product-section-header .text-button {
+      display: none; }
+    .product-inquiry .product-section-header .text-button,
+    .product-inquiry .product-section-content {
+      display: none; } }
+
 /*
 * mobile (<768px)
 */
