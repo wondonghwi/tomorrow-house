@@ -1688,6 +1688,17 @@ i {
         content: '∙'; }
   .review-card-body {
     margin-bottom: 20px; }
+    .review-card-body .review-image {
+      width: 64px;
+      height: 64px;
+      overflow: hidden;
+      border-radius: 4px;
+      margin-bottom: 8px; }
+      .review-card-body .review-image img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        object-fit: cover; }
     .review-card-body p {
       font-size: 13px;
       line-height: 20px;
@@ -1700,6 +1711,11 @@ i {
     .review-card-footer button {
       width: 120px;
       margin-right: 8px; }
+      .review-card-footer button i {
+        margin-left: -4px;
+        margin-right: 4px;
+        font-size: 20px;
+        color: #ffffff; }
     .review-card-footer p {
       font-size: 12px;
       line-height: 16px;
@@ -1719,6 +1735,10 @@ i {
           font-size: 14px;
           line-height: 24px;
           letter-spacing: -0.01em; }
+      .review-card-body .review-image {
+        width: 112px;
+        height: 112px;
+        margin-bottom: 16px; }
       .review-card-body p {
         font-size: 14px;
         line-height: 24px;
