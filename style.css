@@ -1838,6 +1838,14 @@ i {
     .inquiry-card-body p i {
       font-size: 16px; } }
 
+.product-inquiry .inquiry-empty {
+  padding: 48px 0;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: -0.01em;
+  color: #8c8d96;
+  text-align: center; }
+
 @media screen and (max-width: 767px) {
   .product-inquiry {
     padding-bottom: 0; }
@@ -1845,11 +1853,15 @@ i {
     .product-inquiry.is-open .product-section-content {
       display: block;
       padding-bottom: 20px; }
-    .product-inquiry.is-open .product-section-header .text-button {
+    .product-inquiry.is-open .product-section-header .icon-button {
       display: none; }
     .product-inquiry .product-section-header .text-button,
     .product-inquiry .product-section-content {
       display: none; } }
+
+@media screen and (min-width: 768px) {
+  .product-inquiry .inquiry-empty {
+    padding: 28px 0; } }
 
 /*
 * mobile (<768px)
