@@ -6,6 +6,19 @@
   .product-item {
     width: calc(50% - 10px);
 
+    a {
+      display: block;
+
+      &:active {
+        img {
+          transform: scale(1.1);
+        }
+        .product-card-title {
+          opacity: 0.5;
+        }
+      }
+    }
+
     &:nth-child(1),
     &:nth-child(2) {
       margin-bottom: 20px;
@@ -23,6 +36,20 @@
 
       &:last-child {
         display: none;
+      }
+    }
+  }
+
+  @include responsive(D) {
+    .product-item {
+      a:hover {
+        img {
+          transform: scale(1.1);
+        }
+
+        .product-card-title {
+          opacity: 0.5;
+        }
       }
     }
   }

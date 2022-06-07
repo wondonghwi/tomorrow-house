@@ -4,6 +4,7 @@
     border-radius: 4px;
     overflow: hidden;
     img {
+      transition: transform 300ms ease-in-out;
       display: block;
       width: 100%;
       height: auto;
