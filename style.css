@@ -1952,6 +1952,25 @@ i {
     color: #8c8d96;
     font-weight: 700; }
 
+.product-recommendation .product-list {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap; }
+
+.product-recommendation .product-item {
+  width: calc(50% - 10px); }
+  .product-recommendation .product-item:nth-child(1), .product-recommendation .product-item:nth-child(2) {
+    margin-bottom: 20px; }
+
+@media screen and (min-width: 768px) {
+  .product-recommendation .product-item {
+    width: calc(33% - 11px); }
+    .product-recommendation .product-item:nth-child(1), .product-recommendation .product-item:nth-child(2) {
+      margin-bottom: 0; }
+    .product-recommendation .product-item:last-child {
+      display: none; } }
+
 /*
 * mobile (<768px)
 */
