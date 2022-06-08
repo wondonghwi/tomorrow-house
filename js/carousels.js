@@ -10,3 +10,21 @@ const productCarousel = tns({
   mouseDrag: true,
   preventScrollOnTouch: true, // 라이브러리의 console.error 방지용
 });
+
+const userGallery = tns({
+  container: '.user-gallery .slider-list',
+  gutter: 4,
+  controls: false,
+  edgePadding: 16,
+  loop: false,
+  arrowKeys: true,
+  mouseDrag: true,
+  preventScrollOnTouch: true, // 라이브러리의 console.error 방지용
+  responsive: {
+    768: {
+      gutter: 6,
+      controls: true,
+      edgePadding: 75,
+    },
+  },
+});
