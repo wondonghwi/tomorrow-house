@@ -20,6 +20,8 @@
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&display=swap" rel="stylesheet" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.4/tiny-slider.css" />
     <link rel="stylesheet" href="style.css" />
+    <script defer src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
+    <script defer src="./js/carousels.js"></script>
   </head>
 
   <body>
@@ -449,26 +451,79 @@
               </header>
 
               <div class="product-section-content">
-                <ol>
-                  <li>
-                    <div class="gallery-card">
-                      <figure class="gallery-card-image">
-                        <img src="./assets/images/img-review-01.jpg" alt="" />
-                        <figcaption class="visually-hidden">원동휘님의 스타일링샷</figcaption>
-                      </figure>
+                <div class="user-gallery" role="region">
+                  <div class="user-gallery-slider">
+                    <ol class="slider-list">
+                      <li class="slider-item">
+                        <div class="gallery-card">
+                          <figure class="gallery-card-image">
+                            <img src="./assets/images/img-review-01.jpg" alt="" />
+                            <figcaption class="visually-hidden">원동휘님의 스타일링샷</figcaption>
+                          </figure>
 
-                      <div class="gallery-card-detail">
-                        <a href="/" class="avatar-32">
-                          <img src="./assets/images/img-user-01.jpg" alt="" />
-                        </a>
-                        <a href="/" class="username"
-                          >원동휘원동휘원동휘원동휘원동휘원동휘원동휘원동휘원동휘원동휘원동휘원동휘원동휘원동휘</a
-                        >
-                        <span class="order">1/461</span>
-                      </div>
-                    </div>
-                  </li>
-                </ol>
+                          <div class="gallery-card-detail">
+                            <a href="/" class="avatar-32">
+                              <img src="./assets/images/img-user-01.jpg" alt="" />
+                            </a>
+                            <a href="/" class="username">원동휘</a>
+                            <span class="order">1/461</span>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="slider-item">
+                        <div class="gallery-card">
+                          <figure class="gallery-card-image">
+                            <img src="./assets/images/img-review-02.jpg" alt="" />
+                            <figcaption class="visually-hidden">원동휘님의 스타일링샷</figcaption>
+                          </figure>
+
+                          <div class="gallery-card-detail">
+                            <a href="/" class="avatar-32">
+                              <img src="./assets/images/img-user-01.jpg" alt="" />
+                            </a>
+                            <a href="/" class="username">원동휘</a>
+                            <span class="order">1/461</span>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="slider-item">
+                        <div class="gallery-card">
+                          <figure class="gallery-card-image">
+                            <img src="./assets/images/img-review-03.jpg" alt="" />
+                            <figcaption class="visually-hidden">원동휘님의 스타일링샷</figcaption>
+                          </figure>
+
+                          <div class="gallery-card-detail">
+                            <a href="/" class="avatar-32">
+                              <img src="./assets/images/img-user-01.jpg" alt="" />
+                            </a>
+                            <a href="/" class="username">원동휘</a>
+                            <span class="order">1/461</span>
+                          </div>
+                        </div>
+                      </li>
+                      <li class="slider-item">
+                        <div class="gallery-card">
+                          <figure class="gallery-card-image">
+                            <img src="./assets/images/img-review-04.jpg" alt="" />
+                            <figcaption class="visually-hidden">원동휘님의 스타일링샷</figcaption>
+                          </figure>
+
+                          <div class="gallery-card-detail">
+                            <a href="/" class="avatar-32">
+                              <img src="./assets/images/img-user-01.jpg" alt="" />
+                            </a>
+                            <a href="/" class="username">원동휘</a>
+                            <span class="order">1/461</span>
+                          </div>
+                        </div>
+                      </li>
+                    </ol>
+                  </div>
+                  <div class="user-gallery-thumbnail">
+                    <!--썸네일-->
+                  </div>
+                </div>
               </div>
             </section>
 
@@ -1375,8 +1430,5 @@
     </aside>
 
     <div class="overlay" aria-hidden></div>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/tiny-slider/2.9.2/min/tiny-slider.js"></script>
-    <script src="./js/carousels.js"></script>
   </body>
 </html>
