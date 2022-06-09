@@ -2494,10 +2494,10 @@ i {
     width: 100%; }
   .global-header .gnb {
     top: 0;
-    z-index: 50; }
+    z-index: 60; }
   .global-header .lnb {
     top: 50px;
-    z-index: 40; }
+    z-index: 50; }
   @media screen and (min-width: 768px) {
     .global-header {
       height: 130px; }
@@ -2506,6 +2506,7 @@ i {
 
 .global-footer {
   padding: 32px 0 40px 0;
+  margin-bottom: 56px;
   background-color: #f7f8fa; }
   .global-footer-title {
     font-size: 13px;
@@ -2542,21 +2543,23 @@ i {
       content: ':';
       margin: 0 2px; }
   @media screen and (min-width: 1200px) {
-    .global-footer-title {
-      font-size: 14px;
-      line-height: 24px;
-      letter-spacing: -0.01em; }
-    .global-footer-detail-list {
-      display: flex;
-      justify-content: flex-start;
-      align-items: center; }
-    .global-footer-detail-item a:hover {
-      text-decoration: underline; }
-    .global-footer-detail-item:not(:last-child)::after {
-      content: '|';
-      margin: 0 8px; }
-    .global-footer-contact:hover {
-      opacity: 0.5; } }
+    .global-footer {
+      margin-bottom: 0; }
+      .global-footer-title {
+        font-size: 14px;
+        line-height: 24px;
+        letter-spacing: -0.01em; }
+      .global-footer-detail-list {
+        display: flex;
+        justify-content: flex-start;
+        align-items: center; }
+      .global-footer-detail-item a:hover {
+        text-decoration: underline; }
+      .global-footer-detail-item:not(:last-child)::after {
+        content: '|';
+        margin: 0 8px; }
+      .global-footer-contact:hover {
+        opacity: 0.5; } }
 
 .product-tab {
   position: sticky;
@@ -2611,5 +2614,35 @@ i {
   @media screen and (min-width: 1200px) {
     .product-tab-item button:hover {
       color: #3da5f5; } }
+
+.order-cta {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 0 4px;
+  height: 56px;
+  z-index: 40;
+  background-color: #ffffff; }
+  .order-cta .btn-ghost {
+    flex-grow: 0;
+    flex-shrink: 0;
+    width: 72px;
+    margin-right: 4px;
+    flex-direction: column; }
+    .order-cta .btn-ghost i {
+      font-size: 24px;
+      color: #3f4150; }
+    .order-cta .btn-ghost span {
+      font-size: 10px;
+      font-weight: 400;
+      line-height: 16px;
+      letter-spacing: -0.005em;
+      color: #8c8d96; }
+  .order-cta .btn-primary {
+    flex-grow: 1; }
 
 /*# sourceMappingURL=style.css.map */

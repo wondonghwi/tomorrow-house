@@ -1,0 +1,36 @@
+.order-cta {
+  @include flexbox;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  padding: 0 4px;
+  height: $order-cta-height;
+  z-index: $order-cta-level;
+  background-color: $white;
+
+  .btn-ghost {
+    flex-grow: 0;
+    flex-shrink: 0;
+    width: 72px;
+    margin-right: 4px;
+    flex-direction: column;
+
+    i {
+      font-size: 24px;
+      color: $primary;
+    }
+
+    span {
+      font-size: 10px;
+      font-weight: 400;
+      line-height: 16px;
+      letter-spacing: -0.005em;
+      color: $secondary;
+    }
+  }
+
+  .btn-primary {
+    flex-grow: 1;
+  }
+}
