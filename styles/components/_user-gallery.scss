@@ -3,7 +3,49 @@
   overflow: hidden;
 
   &-slider {
+    position: relative;
     margin-bottom: 4px;
+  }
+
+  &-controls {
+    @include pos-center;
+    @include flexbox(between);
+    width: 100%;
+    padding: 0 52px;
+
+    .control-button {
+      @include flexbox;
+      width: 40px;
+      height: 40px;
+      font-size: 28px;
+      color: $primary;
+      border-radius: 50%;
+      background-color: $white;
+      transition: background-color 100ms ease-in-out, color 100ms ease-in-out;
+
+      &.is-prev {
+        i {
+          margin-left: -2px;
+          transform: rotate(90deg);
+        }
+      }
+
+      &.is-next {
+        i {
+          margin-right: -2px;
+          transform: rotate(-90deg);
+        }
+      }
+
+      &:hover {
+        color: $white;
+        background-color: $blue;
+      }
+
+      &[disabled] {
+        visibility: hidden;
+      }
+    }
   }
 
   .thumbnail-list {
