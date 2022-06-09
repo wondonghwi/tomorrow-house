@@ -16,6 +16,10 @@
     margin-right: 4px;
     flex-direction: column;
 
+    .is-active {
+      color: $blue;
+    }
+
     i {
       font-size: 24px;
       color: $primary;
