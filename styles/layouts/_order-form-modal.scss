@@ -1,0 +1,45 @@
+.order-form-modal {
+  display: none;
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  z-index: $order-form-modal-level;
+  width: 100%;
+  padding-top: 16px;
+  background-color: $white;
+  border-radius: 12px 12px 0 0;
+  box-shadow: 0px -4px 20px rgba(0, 0, 0, 0.15);
+
+  &.is-open {
+    display: block;
+    animation: modal-fade-in;
+    animation-duration: 300ms;
+  }
+
+  .order-inputs {
+    margin-bottom: 8px;
+  }
+
+  .order-checkouts,
+  .order-summary {
+    margin-bottom: 16px;
+  }
+
+  .button-group {
+    padding: 4px;
+    padding-top: 0;
+  }
+
+  @include responsive(T) {
+    padding-top: 32px;
+  }
+}
+
+@keyframes modal-fade-in {
+  0% {
+    transform: translate3d(0, 100%, 0);
+  }
+  100% {
+    transform: translate3d(0, 0, 0);
+  }
+}
