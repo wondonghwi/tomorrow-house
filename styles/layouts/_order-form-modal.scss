@@ -5,6 +5,9 @@
   bottom: 0;
   z-index: $order-form-modal-level;
   width: 100%;
+  max-height: 75vh;
+  overflow-y: auto;
+  overscroll-behavior: contain; // NOTE : 스크롤안에서 뒷배경이 움직이지 않게하는속성 추가
   padding-top: 16px;
   background-color: $white;
   border-radius: 12px 12px 0 0;
@@ -20,14 +23,21 @@
     margin-bottom: 8px;
   }
 
-  .order-checkouts,
-  .order-summary {
+  .order-checkouts {
     margin-bottom: 16px;
   }
 
+  .order-summary {
+    margin-bottom: 48px + (4px * 2) + 16px;
+  }
+
   .button-group {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
     padding: 4px;
-    padding-top: 0;
+    background-color: $white;
   }
 
   @include responsive(T) {
