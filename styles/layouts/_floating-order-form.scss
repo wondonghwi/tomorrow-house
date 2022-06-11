@@ -1,8 +1,12 @@
 .floating-order-form {
+  position: sticky;
+  top: $gnb-height-sm + $lnb-height-sm + $product-tab-height-sm;
   @include flexbox(start, start);
+  padding: 24px 0;
   flex-direction: column;
 
-  height: 700px; //TODO need fix
+  max-height: calc(100vh - #{$gnb-height-sm + $lnb-height-sm + $product-tab-height-sm});
+  min-height: calc(100vh - #{$gnb-height-sm + $lnb-height-sm + $product-tab-height-sm + $global-footer-height});
 
   > * {
     width: 100%;
@@ -45,5 +49,8 @@
         color: $primary;
       }
     }
+  }
+  @include responsive(T) {
+    top: $gnb-height-md + $lnb-height-md + $product-tab-height-md;
   }
 }

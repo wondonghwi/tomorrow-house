@@ -2689,11 +2689,15 @@ i {
     transform: translate3d(0, 0, 0); } }
 
 .floating-order-form {
+  position: sticky;
+  top: 130px;
   display: flex;
   justify-content: flex-start;
   align-items: flex-start;
+  padding: 24px 0;
   flex-direction: column;
-  height: 700px; }
+  max-height: calc(100vh - 130px);
+  min-height: calc(100vh - 316px); }
   .floating-order-form > * {
     width: 100%; }
   .floating-order-form .order-checkouts {
@@ -2720,5 +2724,8 @@ i {
     .floating-order-form .button-group .bookmark-button i {
       font-size: 32px;
       color: #3f4150; }
+  @media screen and (min-width: 768px) {
+    .floating-order-form {
+      top: 184px; } }
 
 /*# sourceMappingURL=style.css.map */
