@@ -1,0 +1,49 @@
+.floating-order-form {
+  @include flexbox(start, start);
+  flex-direction: column;
+
+  height: 700px; //TODO need fix
+
+  > * {
+    width: 100%;
+  }
+
+  .order-checkouts {
+    flex-grow: 1;
+    overflow-y: auto;
+
+    @include no-scrollbar;
+    overscroll-behavior: contain;
+  }
+
+  .order-inputs,
+  .order-summary,
+  .button-group {
+    flex-shrink: 0;
+  }
+
+  .button-group {
+    .bookmark-button {
+      flex: 0 0 auto;
+      width: 55px;
+      border: 1px solid $border;
+      border-radius: 4px;
+      transition: background-color 200ms ease-in-out;
+
+      &.is-active {
+        i {
+          color: $blue;
+        }
+      }
+
+      &:hover {
+        background-color: $background;
+      }
+
+      i {
+        font-size: 32px;
+        color: $primary;
+      }
+    }
+  }
+}
