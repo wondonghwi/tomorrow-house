@@ -16,7 +16,7 @@
     margin-right: 4px;
     flex-direction: column;
 
-    .is-active {
+    &.is-active {
       color: $blue;
     }
 

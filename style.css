@@ -2633,7 +2633,7 @@ i {
     width: 72px;
     margin-right: 4px;
     flex-direction: column; }
-    .order-cta .btn-ghost .is-active {
+    .order-cta .btn-ghost.is-active {
       color: #3da5f5; }
     .order-cta .btn-ghost i {
       font-size: 24px;
