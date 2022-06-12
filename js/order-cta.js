@@ -26,8 +26,7 @@ const toggleOrderCtaBookmark = () => {
   }
 
   countSpan.innerHTML = newCount.toLocaleString('ko-Kr');
-  // countSpan.attributes[0] = `북마크 ${newCount}`;
-
+  countSpan.setAttribute('aria-label', `북마크 ${newCount.toLocaleString('ko-Kr')}`);
   orderCtaBuyBtn.classList.toggle('is-active');
 };
 
