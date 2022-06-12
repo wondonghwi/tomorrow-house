@@ -2777,6 +2777,7 @@ i {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  display: none;
   position: fixed;
   left: 0;
   bottom: 0;
@@ -2787,6 +2788,8 @@ i {
   box-shadow: 0px -4px 20px rgba(63, 65, 80, 0.3);
   padding-left: 36px;
   padding-right: 15px; }
+  .bookmark-toast.is-active {
+    display: flex; }
   .bookmark-toast .bookmark-title {
     font-size: 13px;
     line-height: 20px;
@@ -2813,5 +2816,29 @@ i {
     align-items: center; }
     .bookmark-toast .button-group a {
       margin-right: 4px; }
+  @media screen and (min-width: 1200px) {
+    .bookmark-toast {
+      position: fixed;
+      left: 50%;
+      transform: translateX(-50%);
+      bottom: 40px;
+      max-width: 480px;
+      height: 80px;
+      padding-right: 20px;
+      padding-left: 56px;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0px 4px 20px rgba(63, 65, 80, 0.3); }
+      .bookmark-toast .bookmark-title {
+        font-size: 16px;
+        line-height: 24px;
+        letter-spacing: -0.01em; }
+      .bookmark-toast .close-button {
+        left: 10px;
+        font-size: 24px; }
+        .bookmark-toast .close-button:hover {
+          opacity: 0.5; }
+      .bookmark-toast .button-group a {
+        margin-right: 8px; } }
 
 /*# sourceMappingURL=style.css.map */
