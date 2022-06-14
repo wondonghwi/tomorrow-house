@@ -30,3 +30,28 @@ productTabBtnList.forEach((button, index) => {
   button.addEventListener('click', () => toggleActiveTab(index));
   button.addEventListener('click', () => scrollToTabPanel(index));
 });
+
+// NOTE : 각각의 tabPanel의 y축 위치를 구하는 방법 = window.scrollY + getBoundingClientRect().top()
+const productTabPanelIdList = [
+  'product-spec',
+  'product-review',
+  'product-inquiry',
+  'product-shipment',
+  'product-recommendation',
+];
+const productTabPanelList = productTabPanelIdList.map(elem => {
+  return document.querySelector(`#${elem}`);
+});
+
+const productTabPanelPositionMap = {};
+
+const detectTabPanelPosition = () => {
+  productTabPanelList.forEach(panel => {
+    const id = panel.getAttribute('id');
+    const position = window.scrollY + panel.getBoundingClientRect().top;
+    productTabPanelPositionMap[id] = position;
+  });
+};
+
+window.addEventListener('load', detectTabPanelPosition);
+window.addEventListener('resize', detectTabPanelPosition);
