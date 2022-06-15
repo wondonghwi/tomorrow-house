@@ -1,9 +1,10 @@
 const productTab = document.querySelector('.product-tab');
 const productTabBtnList = productTab.querySelectorAll('button');
-let currentActiveTab = productTab.querySelector('.is-active');
 
 const TOP_PANEL_MOBILE = 130;
 const TOP_PANEL_DESKTOP = 184;
+
+let currentActiveTab = productTab.querySelector('.is-active');
 
 const toggleActiveTab = index => {
   const tabItem = productTabBtnList[index].parentNode;
@@ -51,6 +52,7 @@ const detectTabPanelPosition = () => {
     const position = window.scrollY + panel.getBoundingClientRect().top;
     productTabPanelPositionMap[id] = position;
   });
+  updateActiveTabScroll();
 };
 
 const updateActiveTabScroll = () => {
@@ -74,7 +76,9 @@ const updateActiveTabScroll = () => {
     newActiveTab = newActiveTab.parentNode;
     if (newActiveTab !== currentActiveTab) {
       newActiveTab.classList.add('is-active');
-      currentActiveTab.classList.remove('is-active');
+      if (currentActiveTab) {
+        currentActiveTab.classList.remove('is-active');
+      }
       currentActiveTab = newActiveTab;
     }
   }
