@@ -56,6 +56,7 @@ const detectTabPanelPosition = () => {
 };
 
 const updateActiveTabScroll = () => {
+  if (disableUpdating) return;
   // 1.현재 유저가 얼마만큼 스크롤을 했나 -> window.scrollY
   // 2.각 tabPanel y축의 위치 = productTabPanelPositionMap
 
@@ -72,6 +73,13 @@ const updateActiveTabScroll = () => {
   } else {
     newActiveTab = productTabBtnList[0]; //상품정보 버튼
   }
+
+  // 끝까지 스크롤 한 경우 = newActiveTab = productTabBtnList[4]
+  const bodyHeight = document.body.offsetHeight + (window.innerWidth < 1200 ? 56 : 0);
+  if (window.scrollY + window.innerHeight >= bodyHeight) {
+    newActiveTab = productTabBtnList[4];
+  }
+
   if (newActiveTab) {
     newActiveTab = newActiveTab.parentNode;
     if (newActiveTab !== currentActiveTab) {
