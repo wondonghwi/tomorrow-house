@@ -1,4 +1,4 @@
-const sidebarMenuBtn = document.querySelector('.gnb-icon-button.is-menu');
+const sidebarMenuBtn = document.querySelector('.gnb-Icon-button.is-menu');
 const sidebar = document.querySelector('.sidebar');
 const sidebarOverlay = document.querySelector('.overlay');
 
