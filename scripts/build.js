@@ -13,7 +13,7 @@ const buildDir = path.resolve(__dirname, '../build');
 const faviconFileList = [
   'android-chrome-192x192.png',
   'android-chrome-512x512.png',
-  'apple-touch-icon.png',
+  'apple-touch-Icon.png',
   'browserconfig.xml',
   'favicon-16x16.png',
   'favicon-32x32.png',
@@ -24,7 +24,7 @@ const faviconFileList = [
 ];
 
 const faviconUrlList = [
-  '/apple-touch-icon.png',
+  '/apple-touch-Icon.png',
   '/favicon-32x32.png',
   '/favicon-16x16.png',
   '/site.webmanifest',
