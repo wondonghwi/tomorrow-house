@@ -3,6 +3,10 @@
 
 [Live Demo](https://wondonghwi.github.io/tomorrow-house)
 
+< 미리보기 >
+<img width="769" alt="image" src="https://user-images.githubusercontent.com/55338435/173864558-6f289642-c27f-45ce-8136-765700665102.png">
+
+
 > 기술스택
 - Html 
 - Css
