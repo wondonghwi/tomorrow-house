@@ -99,7 +99,5 @@ const updateActiveTabScroll = () => {
 };
 
 window.addEventListener('load', detectTabPanelPosition);
-//TODO Debounce
-window.addEventListener('resize', detectTabPanelPosition);
-//TODO Throttle
-window.addEventListener('scroll', updateActiveTabScroll);
+window.addEventListener('resize', _.debounce(detectTabPanelPosition, 300));
+window.addEventListener('scroll', _.throttle(updateActiveTabScroll, 300));
